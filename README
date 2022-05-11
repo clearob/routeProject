@@ -3,7 +3,7 @@ the first route it gets, not the most optimized;otherwise it return a warning me
 
 
 1. download project from git repository
-   move folder:
+   move to folder:
    pathroute\target
 
 2. run the command
