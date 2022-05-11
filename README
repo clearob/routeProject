@@ -4,7 +4,7 @@ the first route it gets, not the most optimized;otherwise it return a warning me
 
 1. download project from git repository
    move to folder:
-   pathroute\target
+   target
 
 2. run the command
    java -jar pathroute-1.0-SNAPSHOT.jar
