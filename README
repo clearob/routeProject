@@ -2,7 +2,8 @@ The used algorithm  is a recursive one. It stops with success when it finds a va
 the first route it gets, not the most optimized;otherwise it return a warning message  with 400 http status
 
 
-1. After zip decomprenssion move to folder:
+1. download project from git repository
+   move folder:
    pathroute\target
 
 2. run the command
