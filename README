@@ -1,0 +1,41 @@
+The used algorithm  is a recursive one. It stops with success when it finds a valid route,
+the first route it gets, not the most optimized;otherwise it return a warning message  with 400 http status
+
+
+1. After zip decomprenssion move to folder:
+   pathroute\target
+
+2. run the command
+   java -jar pathroute-1.0-SNAPSHOT.jar
+
+3. the springboot application start....
+
+4. on a browser type
+    http://localhost:8080/routing/FRA/ITA (using a GET method)
+
+    response
+
+    {"routes":["FRA","ITA"]}
+
+5. on a browser type
+   http://localhost:8080/routing/NLD/ITA (using a GET method)
+
+       response
+
+       {"routes":["NLD","BEL","FRA","ITA"]}
+
+ 6. on a browser type
+    http://localhost:8080/routing/GBR/ITA (using a GET method)
+
+    response
+
+    not land crossing between the chosen countries  (HTTPSTATUS BAD_REQUEST 400)
+
+7. on a browser type
+       http://localhost:8080/routing/GBN/ITA (using a GET method)
+
+       response
+
+       {"result":"GBN-ITA is valid:false"} (one of the countries is not valid)
+
+
